@@ -8,7 +8,6 @@ function tocaSom (seletorAudio) {
     //alert('Elemento não encontrado);
     console.log('Elemento não encontrado ou seletor inválido');
     }
-
   }
   
 const listaDeTeclas = document.querySelectorAll('.tecla');
@@ -29,11 +28,9 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
       if (evento.code === 'Space' || evento.code === 'Enter') {
         tecla.classList.add('ativa');
      }
-
     }
 
     tecla.onkeyup = function () {
       tecla.classList.remove('ativa');
     }
-
   }
